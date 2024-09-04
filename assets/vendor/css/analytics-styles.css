@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Card styling */
+.card {
+    border-radius: 12px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Form elements */
+.form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-select {
+    border-radius: 8px;
+    padding: 10px 16px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Heading and subtitles */
+h4.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #343a40;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #24c835;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.totalregist {
+    font-size: 20px;
+    font-weight: 700;
+    color: #df3535;
+}
+
+/* Attendance section */
+.card{
+    box-shadow: none;
+    border-radius: 1px;
+}
+
+.card .card-title span {
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.container-fluid {
+    padding: 2rem 3rem;
+}
+
+.col-md-6 {
+    margin-bottom: 2rem;
+}
+
+.card-total,
+.card-student-paid {
+    background-color: #ffefef;
+    transition: all 0.3s ease;
+}
+
+.card-total:hover,
+.card-student-paid:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+
+}
+
+.card-male,
+.card-totalstudent {
+    background-color: #dee5ff;
+    transition: all 0.3s ease;
+}
+
+.card-male:hover,
+.card-totalstudent:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.card-female,
+.card-totalpaid {
+    background-color: #d3ffdc;
+    transition: all 0.3s ease;
+}
+
+.card-female:hover,
+.card-totalpaid:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Custom table styling */
+.table,
+.table th {
+    padding-top: 0;
+    font-size: 1.1rem;
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background-color: #f4f2f2;
+}
+
+/* Nav pills styling */
+.nav-menu-item ul {
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.nav-menu-item ul li {
+    margin: auto 15px;
+}
+
+#navs-pills-top-summary .card-body {
+    padding-left: 40px;
+}
+
+#navs-pills-top-summary .card-body h2 {
+    font-weight: 700;
+}
+
+.nav-align-top .tab-content {
+    background: none;
+    box-shadow: none;
+    padding-left: 0;
+}
+
+.nav-menu-item {
+    ul{
+    background-color: #dbdee0;
+    padding: 10px;
+    border-radius: 0px;
+}
+    li {
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        background-color: #ededed;
+        padding: 20px;
+    }
+
+}

@@ -1,0 +1,251 @@
+<!doctype html>
+
+<html lang="en" class="light-style layout-menu-fixed layout-compact" dir="ltr" data-theme="theme-default"
+    data-assets-path="../assets/" data-template="vertical-menu-template-free" data-style="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Payment-Analytics</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/analytics-styles.css" />
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-lg-8">
+                <div class="nav-align-top mb-6">
+                    <div class="nav-menu-item">
+                        <ul class="nav nav-pills mb-5  d-flex justify-content-center align-items-center" role="tablist">
+                            <li class="nav-item">
+                                <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-pills-top-monthlyfee"
+                                    aria-controls="navs-pills-top-monthlyfee" aria-selected="true">
+                                    Monthly Fee
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-pills-top-otherfee" aria-controls="navs-pills-top-otherfee"
+                                    aria-selected="false">
+                                    Other Fee
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#navs-pills-top-messages" aria-controls="navs-pills-top-messages"
+                                    aria-selected="false">
+                                    All Payments
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="navs-pills-top-monthlyfee" role="tabpanel">
+                            <div class="col-md-6">
+                                <div class="card mt-2">
+                                    <h4 class="card-header">Monthly Fee</h4>
+                                    <div class="card-body">
+                                        <div class="mb-4">
+                                            <label for="exampleFormControlSelect1" class="form-label">Please Select the
+                                                Month</label>
+                                            <select class="form-select" id="exampleFormControlSelect1"
+                                                aria-label="Default select example">
+                                                <option selected>January</option>
+                                                <option value="1">February</option>
+                                                <option value="2">March</option>
+                                                <option value="3">April</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-4">
+                                    <div class="card  card-student-paid mb-4">
+                                        <div class="card-body">
+                                            <h2 class="card-title mb-2">200</h2>
+                                            <div class="card-subtitle mb-4">Students Paid</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="card card-totalstudent mb-4">
+                                        <div class="card-body">
+                                            <h2 class="card-title mb-2">200</h2>
+                                            <div class="card-subtitle mb-4">Total Students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="card card-totalpaid mb-4">
+                                        <div class="card-body">
+                                            <h2 class="card-title mb-2">160</h2>
+                                            <div class="card-subtitle mb-4">Total Paid</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="navs-pills-top-otherfee" role="tabpanel">
+                            <div class="col-md-6">
+                                <div class="card mt-2">
+                                    <h4 class="card-header">Other Fee</h4>
+                                    <div class="card-body">
+                                        <div class="mb-4">
+                                            <label for="exampleFormControlSelect1" class="form-label">Please
+                                                Select the Payment Type</label>
+                                            <select class="form-select" id="exampleFormControlSelect1"
+                                                aria-label="Default select example">
+                                                <option selected>Registration</option>
+                                                <option value="1">Registration</option>
+                                                <option value="2">Registration</option>
+                                                <option value="3">Registration</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-4">
+                                    <div class="card card-student-paid  mb-4">
+                                        <div class="card-body">
+                                            <h2 class="card-title mb-2">200</h2>
+                                            <div class="card-subtitle mb-4">Students Paid</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="card card-totalstudent mb-4">
+                                        <div class="card-body">
+                                            <h2 class="card-title mb-2">200</h2>
+                                            <div class="card-subtitle mb-4">Total Students</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="card card-totalpaid mb-4">
+                                        <div class="card-body">
+                                            <h2 class="card-title mb-2">160</h2>
+                                            <div class="card-subtitle mb-4">Total Paid</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="navs-pills-top-messages" role="tabpanel">
+
+
+                            <div class="col-md-12">
+                                <div class="card mt-2">
+                                    <h4 class="card-header">All Payments</h4>
+                                    <div class="card-body">
+                                        <label for="exampleFormControlSelect1" class="form-label">Please
+                                            Select the Date</label>
+                                        <div class="mb-4 row align-items-center">
+                                            <label for="from-date" class="col-md-1 col-form-label">From</label>
+                                            <div class="col-md-4">
+                                                <input class="form-control" type="date" value="2021-06-18" id="from-date" />
+                                            </div>
+                            
+                                            <label for="to-date" class="col-md-1 col-form-label">To</label>
+                                            <div class="col-md-4">
+                                                <input class="form-control" type="date" value="2024-06-18" id="to-date" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- All Payments -->
+                            <div class="row">
+                                <div class="col-lg">
+                                    <div class="card mt-3">
+                                        <div class="col-7">
+                                            <div class="h-100 mb-4">
+                                                <div class="card-body">
+                                                    <div class="card-title mb-4 text-decoration-underline">All Payment Details</div>
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Monthly Fee</span> 
+                                                        <span class="float-end">360</span>
+                                                    </h4>
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Registration Fee</span> 
+                                                        <span class="float-end">360</span>
+                                                    </h4>
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Material Fee</span> 
+                                                        <span class="float-end">360</span>
+                                                    </h4>
+                                                    <h4 class="card-title mb-2">
+                                                        <span>Exam Fee</span> 
+                                                        <span class="float-end">360</span>
+                                                    </h4>
+                                                    <h4 class="card-title mb-0 mt-5">Total Amount<span class="float-end"><h4 class="card-title">1300</h4></span></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+
+</body>
+
+</html>
