@@ -4,15 +4,6 @@ body {
     color: #343a40;
 }
 
-/* Card styling */
-.card {
-    border-radius: 12px;
-}
-
-.card-body {
-    padding: 2rem;
-}
-
 /* Form elements */
 .form-label {
     font-weight: 500;
@@ -30,98 +21,6 @@ body {
 .form-select:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
-}
-
-/* Heading and subtitles */
-h4.card-title {
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: #343a40;
-}
-
-.card-subtitle {
-    font-size: 1rem;
-    color: #24c835;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.totalregist {
-    font-size: 20px;
-    font-weight: 700;
-    color: #df3535;
-}
-
-/* Attendance section */
-.card{
-    box-shadow: none;
-    border-radius: 1px;
-}
-
-.card .card-title span {
-    font-weight: 400;
-    color: #6c757d;
-}
-
-.container-fluid {
-    padding: 2rem 3rem;
-}
-
-.col-md-6 {
-    margin-bottom: 2rem;
-}
-
-.card-total,
-.card-student-paid {
-    background-color: #ffefef;
-    transition: all 0.3s ease;
-}
-
-.card-total:hover,
-.card-student-paid:hover {
-    background-color: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-
-}
-
-.card-male,
-.card-totalstudent {
-    background-color: #dee5ff;
-    transition: all 0.3s ease;
-}
-
-.card-male:hover,
-.card-totalstudent:hover {
-    background-color: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
-
-.card-female,
-.card-totalpaid {
-    background-color: #d3ffdc;
-    transition: all 0.3s ease;
-}
-
-.card-female:hover,
-.card-totalpaid:hover {
-    background-color: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
-
-/* Custom table styling */
-.table,
-.table th {
-    padding-top: 0;
-    font-size: 1.1rem;
-    border-bottom: none;
-}
-
-.table tbody tr:hover {
-    background-color: #f4f2f2;
 }
 
 /* Nav pills styling */
@@ -150,20 +49,155 @@ h4.card-title {
     padding-left: 0;
 }
 
-.nav-menu-item {
-    ul{
-    background-color: #dbdee0;
-    padding: 10px;
-    border-radius: 0px;
+.nav-pills .nav-link {
+    border: 2px solid #007bff;
 }
+
+.nav-pills .nav-link:hover {
+    border: 2px solid #007bff;
+    border-bottom: 2px solid #007bff !important;
+}
+
+.nav-menu-item {
+    ul {
+
+        padding: 10px;
+        border-radius: 0px;
+    }
+
     li {
         align-items: center;
         justify-content: center;
     }
 
-    button{
-        background-color: #ededed;
-        padding: 20px;
+    button {
+        border-radius: 0px !important;
+        padding: 20px 40px !important;
+        height: 50px;
+        width: 320px !important;
+        font-size: 16px;
     }
 
+}
+
+/* Card styling */
+.card {
+    box-shadow: none;
+    border-radius: 1px;
+}
+
+.card-selection {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-total,
+.card-student-paid {
+    background-color: #fce4e4;
+    transition: all 0.3s ease;
+}
+
+.card-total:hover,
+.card-student-paid:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+
+}
+
+.card-male,
+.card-totalstudent {
+    background-color: #dee5ff;
+    transition: all 0.3s ease;
+}
+
+.card-male:hover,
+.card-totalstudent:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.card-female,
+.card-totalpaid {
+    background-color: #c5f7cf;
+    transition: all 0.3s ease;
+}
+
+.card-female:hover,
+.card-totalpaid:hover {
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+
+/* Heading and subtitles */
+h4 .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #343a40;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #24c835;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.totalregist {
+    font-size: 24px;
+    font-weight: 700;
+    color: #df3535;
+}
+
+.card-text-total {
+
+    h2 {
+        font-size: 28px !important;
+        margin-bottom: 1px;
+    }
+}
+
+/* Attendance section */
+.totalregist .card-title,
+.all-payments .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #24c835 !important;
+}
+
+.all-payments .vr {
+    height: 5rem !important;
+}
+
+.card .card-title span {
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.container-fluid {
+    padding: 2rem 3rem;
+}
+
+.col-md-6 {
+    margin-bottom: 2rem;
+}
+
+
+/* Custom table styling */
+.table,
+.table th {
+    padding-top: 0;
+    font-size: 1.1rem;
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background-color: #f4f2f2;
 }

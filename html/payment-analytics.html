@@ -10,43 +10,19 @@
 
     <title>Payment-Analytics</title>
 
-    <meta name="description" content="" />
+   <!-- Core CSS -->
+   <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+   <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet" />
-
-    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
-
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../assets/css/demo.css" />
-
-    <!-- Vendors CSS -->
-    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
-    <!-- Styles CSS -->
-    <link rel="stylesheet" href="../assets/vendor/css/analytics-styles.css" />
-
-    <!-- Helpers -->
-    <script src="../assets/vendor/js/helpers.js"></script>
-    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="../assets/js/config.js"></script>
+   <!-- Styles CSS -->
+   <link rel="stylesheet" href="../assets/vendor/css/analytics-styles.css" />
 </head>
 
 <body>
 
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <div class="nav-align-top mb-6">
                     <div class="nav-menu-item">
                         <ul class="nav nav-pills mb-5  d-flex justify-content-center align-items-center" role="tablist">
@@ -77,7 +53,7 @@
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="navs-pills-top-monthlyfee" role="tabpanel">
                             <div class="col-md-6">
-                                <div class="card mt-2">
+                                <div class="card card-selection mt-2">
                                     <h4 class="card-header">Monthly Fee</h4>
                                     <div class="card-body">
                                         <div class="mb-4">
@@ -128,7 +104,7 @@
 
                         <div class="tab-pane fade" id="navs-pills-top-otherfee" role="tabpanel">
                             <div class="col-md-6">
-                                <div class="card mt-2">
+                                <div class="card card-selection mt-2">
                                     <h4 class="card-header">Other Fee</h4>
                                     <div class="card-body">
                                         <div class="mb-4">
@@ -179,9 +155,8 @@
 
                         <div class="tab-pane fade" id="navs-pills-top-messages" role="tabpanel">
 
-
                             <div class="col-md-12">
-                                <div class="card mt-2">
+                                <div class="card card-selection mt-2">
                                     <h4 class="card-header">All Payments</h4>
                                     <div class="card-body">
                                         <label for="exampleFormControlSelect1" class="form-label">Please
@@ -189,12 +164,13 @@
                                         <div class="mb-4 row align-items-center">
                                             <label for="from-date" class="col-md-1 col-form-label">From</label>
                                             <div class="col-md-4">
-                                                <input class="form-control" type="date" value="2021-06-18" id="from-date" />
+                                                <input class="form-control" type="date" value="2021-06-18"
+                                                    id="from-date" />
                                             </div>
-                            
                                             <label for="to-date" class="col-md-1 col-form-label">To</label>
                                             <div class="col-md-4">
-                                                <input class="form-control" type="date" value="2024-06-18" id="to-date" />
+                                                <input class="form-control" type="date" value="2024-06-18"
+                                                    id="to-date" />
                                             </div>
                                         </div>
                                     </div>
@@ -203,30 +179,43 @@
 
 
                             <!-- All Payments -->
-                            <div class="row">
+                            <div class="row all-payments mt-3">
                                 <div class="col-lg">
-                                    <div class="card mt-3">
-                                        <div class="col-7">
-                                            <div class="h-100 mb-4">
-                                                <div class="card-body">
-                                                    <div class="card-title mb-4 text-decoration-underline">All Payment Details</div>
-                                                    <h4 class="card-title mb-2">
-                                                        <span>Monthly Fee</span> 
-                                                        <span class="float-end">360</span>
-                                                    </h4>
-                                                    <h4 class="card-title mb-2">
-                                                        <span>Registration Fee</span> 
-                                                        <span class="float-end">360</span>
-                                                    </h4>
-                                                    <h4 class="card-title mb-2">
-                                                        <span>Material Fee</span> 
-                                                        <span class="float-end">360</span>
-                                                    </h4>
-                                                    <h4 class="card-title mb-2">
-                                                        <span>Exam Fee</span> 
-                                                        <span class="float-end">360</span>
-                                                    </h4>
-                                                    <h4 class="card-title mb-0 mt-5">Total Amount<span class="float-end"><h4 class="card-title">1300</h4></span></h4>
+                                    <div class="card card-selection mt-3 h-100 mb-4">
+                                        <div class="card-body">
+                                            <div class="card-title mb-4 text-uppercase">Payment Details</div>
+                                            <div class="row d-flex justify-content-center align-items-center px-2 pt-6">
+                                                <div class="col-2">
+                                                    <div class="card-title mb-2 text-center">
+                                                        <h2>560</h2>
+                                                        <h5>Monthly Fee</h5>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-2">
+                                                    <div class="card-title mb-2 text-center">
+                                                        <h2>240</h2>
+                                                        <h5>Registration</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <div class="card-title mb-2 text-center">
+                                                        <h2>500</h2>
+                                                        <h5>Material Fee</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <div class="card-title mb-2 text-center">
+                                                        <h2>100</h2>
+                                                        <h5>Exam Fee</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    
+                                                    <div class="card-text-total mb-2 text-center">
+                                                        <h2>1050</h2>
+                                                        <h5>Total</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
