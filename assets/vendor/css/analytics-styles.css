@@ -74,7 +74,7 @@ body {
         border-radius: 0px !important;
         padding: 20px 40px !important;
         height: 50px;
-        width: 320px !important;
+        width: 290px !important;
         font-size: 16px;
     }
 
@@ -189,7 +189,6 @@ h4 .card-title {
     margin-bottom: 2rem;
 }
 
-
 /* Custom table styling */
 .table,
 .table th {
@@ -200,4 +199,9 @@ h4 .card-title {
 
 .table tbody tr:hover {
     background-color: #f4f2f2;
+}
+
+.vl{
+    border-right: 1px solid #24c835;
+    height: 100px;
 }
